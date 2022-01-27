@@ -67,7 +67,6 @@ export const CV = {
     "Capacidad resolutiva",
     "Trabajo en equipo",
     "Creatividad",
-    "Weaponery",
     "Capacidad de adaptación",
     "Esfuerzo"
   ],
