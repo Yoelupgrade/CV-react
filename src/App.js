@@ -1,29 +1,50 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./App.css";
-import { Hero, Education, About, Experience,More } from "./components/index.js";
+import {
+  Hero,
+  Education,
+  About,
+  Experience,
+  More,
+} from "./components/index.js";
 import { CV } from "./CV/CV";
-const { hero, education, experience,languages,habilities } = CV;
+const { hero, education, experience, languages, habilities } = CV;
 
 function App() {
-  const [showEducation, setShowEducation] = useState(true);
+  const [showEducation, setShowEducation] = useState("education");
   return (
     <div className="App">
       <Hero hero={hero} />
       <About hero={hero} />
-      <button className="custom-btn btn-4" onClick={() => setShowEducation(true)}>
-        Education
-      </button>
-      <button className="custom-btn btn-4" onClick={() => setShowEducation(false)}>
-        Experience
-      </button>
-      <div>
-        {showEducation ? (
-          <Education education={education}/>) : (<Experience experience={experience} />)}
+      <div className="btn-container">
+        <button
+          className="custom-btn"
+          onClick={() => setShowEducation("education")}
+        >
+          Educación
+        </button>
+        <button
+          className="custom-btn"
+          onClick={() => setShowEducation("experience")}
+        >
+          Experiencia
+        </button>
+        <button
+          className="custom-btn"
+          onClick={() => setShowEducation("abilities")}
+        >
+          Habilidades
+        </button>
       </div>
-      <More
-        languages={languages}
-        habilities={habilities}
-	      />
+      <div className="all-container">
+        {showEducation === "education" ? (
+          <Education education={education} />
+        ) : showEducation === "experience" ? (
+          <Experience experience={experience} />
+        ) : showEducation === "abilities" ? (
+          <More languages={languages} habilities={habilities} />
+        ) : null}
+      </div>
     </div>
   );
 }

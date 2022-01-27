@@ -1,0 +1,22 @@
+
+@media (min-width: 320px){
+.aboutme{
+    width: 85%;
+    margin-bottom:10%;
+    margin-top:10%;
+}
+}
+
+@media (min-width: 768px){
+    .aboutme{
+        width: 50%;
+        margin:5%;
+    }
+    }
+
+.aboutme{
+    background-color: rgba(0, 36, 0, 0.712);
+    border-radius: 10px;
+    padding:2%;
+    box-shadow: 0 0 10px green, 0 0 15px green,0 0 10px green inset,0 0 15px green inset;
+    }

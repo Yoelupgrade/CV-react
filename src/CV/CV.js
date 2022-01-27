@@ -6,7 +6,7 @@ export const CV = {
     email: "yoel.arenas@bootcamp-upgrade.com",
     birthDate: "26/01/1990",
     phone: "687654321",
-    image: "https://i.imgur.com/ZQAkED3.png",
+    image: "https://res.cloudinary.com/dsmdcnoys/image/upload/v1643319203/Card%20Magic/foto_cv_bwfuxs.jpg",
     gitHub: "https://github.com/Yoelupgrade",
     aboutMe: [
       {

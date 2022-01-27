@@ -3,7 +3,6 @@ import "./Hero.css";
 
 export const Hero = ({ hero }) => {
   return (
-    <div>
        <div className="hero">
       <img src={hero.image} alt={hero.image} />
       <div className="card">
@@ -26,7 +25,6 @@ export const Hero = ({ hero }) => {
             GitHub
           </a></p>
       </div>
-    </div>
     </div>
   )
 }

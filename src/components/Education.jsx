@@ -3,8 +3,9 @@ import "./Education.css";
 
 export const Education = ({ education }) => {
   return (
-    <div>
-      <div className="education card">
+    
+      <div>
+      <h3>Educacíon</h3>
         {education.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
@@ -15,6 +16,5 @@ export const Education = ({ education }) => {
           );
         })}
       </div>
-    </div>
   );
 };

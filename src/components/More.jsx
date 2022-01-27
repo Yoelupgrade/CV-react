@@ -3,8 +3,7 @@ import "./More.css";
 
 export const More = ({ languages,habilities }) => {
   return (
-    <div>
-      <div className="education card">
+      <div>
         <h3>Idiomas</h3>
         <p>{languages.language}</p>
         <h3>Habilidades</h3>      
@@ -16,6 +15,5 @@ export const More = ({ languages,habilities }) => {
           );
         })}
       </div>
-    </div>
   );
 };

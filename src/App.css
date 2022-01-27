@@ -1,4 +1,60 @@
+
 .App {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
   text-align: center;
+  /* font-weight: bold; */
+ color:white;
+}
+
+@media (min-width: 320px){
+  .all-container{
+      width: 85%;
+      margin-bottom:10%;
+      margin-top:10%;
+  }
+  .custom-btn{
+    font-size: 70%;
+  }
+  }
+  
+  @media (min-width: 768px){
+      .all-container{
+          max-width: 60%;
+          margin:5%;
+      }
+      .custom-btn{
+        font-size: 100%;
+      }
+      }
+      
+.all-container{
+  box-shadow: 0 0 10px green, 0 0 15px green,0 0 10px green inset,0 0 15px green inset;
+  background-color: rgba(0, 36, 0, 0.712);
+  padding:2%;
+  border-radius:10px;
+  
+}
+.btn-container{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  width:100%;
+}
+.custom-btn{
+background-color: rgba(0, 0, 0, 0.74);
+color: green;
+padding:10px;
+margin:1%;
+box-shadow: 0 0 10px green, 0 0 15px green ;
+border-radius: 10px;
+font-weight: bold;
+}
+
+.custom-btn:focus{
+  background-color:rgba(0, 139, 0, 0.514);
+color:black;
 }
 
